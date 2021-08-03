@@ -2,7 +2,7 @@
 body
 {
     font-family: 'Roboto', sans-serif;
-    background : linear-gradient(to right , blue, violet);
+    background : #2295A8;
 }
 .container
 {
@@ -54,6 +54,8 @@ select
     border: none;
     padding:10px;
     font-size: 30px;
+    background-color: transparent;
+    color: white;
 }
 ::placeholder
 {
@@ -102,6 +104,10 @@ select
 }
 #tips
 {
-    color: white;
+    color: black;
 }
 
+.button :hover
+{
+    background-color: red;
+}

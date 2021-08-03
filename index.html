@@ -26,9 +26,9 @@
                         <td><input type="number" name="" id="age" placeholder="" value="25"  required ></td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <th>Units</th>
                         <td colspan="1">
-                            <select name="option" id="option" onchange="return changemetrics()">
+                            <select name="option" id="option" onchange="return changemetrics(this)">
                                 <option value="kg-m">kg-m</option>
                                 <option value="lbs-in">lbs-in</option>
 
@@ -46,7 +46,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input type="submit" value="Calculate">
+                            <input type="submit" class="button" value="Calculate" >
                             <input type="reset" value="Reset">
                         </td>
                     </tr>

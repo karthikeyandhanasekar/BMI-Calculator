@@ -6,18 +6,23 @@ if (option === "kg-m" )
 {
      document.getElementById('height').placeholder="m"
     document.getElementById('weight').placeholder="kg"
+    document.getElementById('weight').value=null
+    document.getElementById('height').value=null
+
 }
 else
 {
     document.getElementById('height').placeholder="in"
     document.getElementById('weight').placeholder="lbs"
     document.getElementById('height').step="any"
+    document.getElementById('height').value=null
+    document.getElementById('weight').value=null
+
 
 }
 
     return false
 }
-
 
 function calculate()
 {
@@ -79,11 +84,11 @@ else if (bmi >= 25.0 && bmi <=29.9 )
 {
     status.innerHTML = "OverWeight"
     status.style.color="red"
-    message.innerHTML = "Be on Diet"
+    message.innerHTML = "Be on Diet and Workout Regularly"
     message.style.color="green"
     titletips.innerHTML = "Health Tips"
 
-    tips.innerHTML="<ul><li>adding more fruits and vegetables to your diet</li><li>eating smaller meals</li><li>count calories</li><li>eating mindfully</li><li>limiting saturated fats, trans fats, and refined sugars</li></ul>"
+    tips.innerHTML="<ul><li>ADd more fruits and vegetables to your diet</li><li>Eat smaller meals</li><li>Count calories</li><li>Eat mindfully</li><li>Limit saturated fats, trans fats, and refined sugars</li></ul>"
     intro.style.display="block"
     intro.style.visibility="visible"
     output.style.visibility="visible"
@@ -122,6 +127,7 @@ else
     intro.style.visibility="visible"
     output.style.visibility="visible"
     output.style.display="block"
+ 
 }
 
 return false
