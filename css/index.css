@@ -1,0 +1,93 @@
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(235, 175, 96);
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#input ,#output
+{
+    padding: 1rem;
+    width: 30%;
+    background-color: blue;
+    border-radius: 2%;
+}
+#input form table tr td,th
+{
+    padding-bottom: 2rem;
+}
+#input form table tr th 
+{
+    font-size: 2rem;
+    padding-right: 4rem;
+    text-align: right;
+    width: fit-content;
+
+}
+#input form table tr td 
+{
+    width: min-content;
+    text-align: center;
+
+}
+#input form table tr input[type="number"]
+{
+    font-size: 1rem;
+    width: 70%;
+    height: 2rem;
+
+}
+#input form table tr input[type="submit"],input[type="reset"]
+{
+
+    margin-right: 1rem;
+    border: none;
+    padding:10px;
+    font-size: 30px;
+}
+::placeholder
+{
+    text-align: right;
+    font-weight: bold;
+}
+#output h1
+{
+    color: white;
+    text-align: center;
+}
+
+#output h3
+{
+    text-align: justify;
+    font-size: 2rem;
+}
+
+#about table  tr td
+{
+    border: solid;
+    font-size: large;
+}
+.odd
+{
+    background-color: rgb(235, 175, 96);
+    font-weight: bold;
+}
+#bmiintro
+{
+    width: 62rem;
+    text-align: justify;
+    line-height: 2;
+    font-size: large;
+
+}
+#bmiintro , #chart
+{
+    background-color: rgb(240, 149, 29);
+    padding : 5px;
+}
+

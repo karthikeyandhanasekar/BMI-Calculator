@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 id="logo">BMI Calculator</h1>
+        </nav>
+    </header>
+    
+    <section>
+        <div class="container">
+        <div id="input">
+
+            <form action="">
+                <table>
+                    <tr>
+                        <th>Age</th>
+                        <td><input type="number" name="" id="age" placeholder="" required ></td>
+                    </tr>
+                    <tr>
+                        <th>Height</th>
+                        <td><input type="number" name="" id="height" placeholder="m" required ></td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td><input type="number" name="" id="weight" placeholder="kg" required ></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Calculate">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+                
+            </form>
+
+        </div>
+        <div id="output">
+                <h1>BMI Result</h1>
+                <h3 id="status">Weight Status</h3>
+                <h3 id="bmivalue">BMI Value</h3>
+                <h3 id="message">Message</h3>
+            
+
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div id="chart">
+        <h1>BMI Chart</h1>
+        <table >
+            <tr class="odd"><td class="cinfoHd">Category</td><td class="cinfoHdL">BMI range - kg/m<sup>2</sup></td></tr>
+            <tr><td>Severe Thinness</td><td >&lt; 16</td></tr>
+            <tr class="odd"><td>Moderate Thinness</td><td >16 - 17</td></tr>
+            <tr><td>Mild Thinness</td><td >17 - 18.5</td></tr>
+        
+            <tr class="odd"><td>Normal</td><td >18.5 - 25</td></tr>
+            <tr><td>Overweight</td><td >25 - 30</td></tr>
+            <tr class="odd"><td>Obese Class I</td><td >30 - 35</td></tr>
+            <tr><td>Obese Class II</td><td >35 - 40</td></tr>
+            <tr class="odd"><td>Obese Class III</td><td >&gt; 40</td></tr>
+        </table>
+    </div>
+    <div id="bmiintro">
+        <p>BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that are used by the calculator.
+
+        </p>
+    </div>
+</div>
+    </section>
+</body>
+</html>
