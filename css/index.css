@@ -2,7 +2,7 @@
 body
 {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(235, 175, 96);
+    background-color: rgb(20, 245, 12);
 }
 .container
 {
@@ -14,7 +14,7 @@ body
 {
     padding: 1rem;
     width: 30%;
-    background-color: blue;
+    background-color: orange;
     border-radius: 2%;
 }
 #input form table tr td,th
@@ -41,6 +41,11 @@ body
     width: 70%;
     height: 2rem;
 
+}
+select 
+{
+    width: 70%;
+    font-size: 1rem;
 }
 #input form table tr input[type="submit"],input[type="reset"]
 {

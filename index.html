@@ -19,15 +19,26 @@
         <div class="container">
         <div id="input">
 
-            <form action="">
+            <form action="" onsubmit=" return calculate()">
                 <table>
                     <tr>
                         <th>Age</th>
-                        <td><input type="number" name="" id="age" placeholder="" required ></td>
+                        <td><input type="number" name="" id="age" placeholder="" value="25"  required ></td>
                     </tr>
                     <tr>
+                        <td></td>
+                        <td colspan="1">
+                            <select name="option" id="option" onchange="return changemetrics()">
+                                <option value="kg-m">kg-m</option>
+                                <option value="lbs-in">lbs-in</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+
                         <th>Height</th>
-                        <td><input type="number" name="" id="height" placeholder="m" required ></td>
+                        <td><input type="number" name="" id="height" placeholder="m"  required ></td>
                     </tr>
                     <tr>
                         <th>Weight</th>
