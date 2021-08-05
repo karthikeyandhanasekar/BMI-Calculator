@@ -24,14 +24,22 @@ body
 #input form table tr th 
 {
     font-size: 2rem;
-    padding-right: 4rem;
+    padding-right: 2rem;
     text-align: right;
     width: fit-content;
 
 }
 #input form table tr td 
 {
-    width: min-content;
+    width: fit-content;
+    text-align: center;
+
+}
+#input form table tr td select
+{
+    border : solid;
+    font-size: 20px;
+    width: fit-content;
     text-align: center;
 
 }

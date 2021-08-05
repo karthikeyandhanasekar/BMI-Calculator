@@ -38,21 +38,23 @@ var output=document.getElementById('output')
 
 
 
-var option = document.getElementById('option').value
+var heightoption = document.getElementById('heightoption').value
+var weightoption = document.getElementById('weightoption').value
+
 
 var bmi=0
-if (option === "kg-m" )
+if (heightoption=== "m"  && weightoption ==="kg" )
 {
      bmi = (weight / ((height**2) / 10000)).toFixed(2)
      
      //alert("Indian" + " " +  bmi)
- 
 }
 else
 {
     bmi = ( (703 * weight) / (height**2) ).toFixed(2) 
     //alert("US" + " " +  bmi)
 }
+
 
 document.getElementById("bmivalue").innerHTML = bmi + " kg/m<sup>2</sup>"
 if (bmi < 18.5)
@@ -127,8 +129,6 @@ else
     intro.style.visibility="visible"
     output.style.visibility="visible"
     output.style.display="block"
- 
 }
-
 return false
 }

@@ -25,6 +25,7 @@
                         <th>Age</th>
                         <td><input type="number" name="" id="age" placeholder="" value="25"  required ></td>
                     </tr>
+                    <!--
                     <tr>
                         <th>Units</th>
                         <td colspan="1">
@@ -35,14 +36,27 @@
                             </select>
                         </td>
                     </tr>
+                    -->
                     <tr>
 
                         <th>Height</th>
                         <td><input type="number" name="" id="height" placeholder="m"  required ></td>
+                        <td>
+                            <select name="option" id="heightoption" onchange="return changemetrics(this)">
+                                <option value="m">m</option>
+                                <option value="in">in</option>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <th>Weight</th>
                         <td><input type="number" name="" id="weight" placeholder="kg" required ></td>
+                        <td>
+                            <select name="option" id="weightoption" onchange="return changemetrics(this)">
+                                <option value="kg">kg</option>
+                                <option value="lbs">lbs</option>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="2">
